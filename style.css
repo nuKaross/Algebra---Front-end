@@ -1,0 +1,28 @@
+.heading1 {
+  justify-content: center;
+  display: flex;
+  text-shadow: 2px 2px 5px black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: orange;
+}
+.heading2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}
+.heading3 {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.heading4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  display: flex;
+  justify-content: end;
+}
+.articleText {
+  font-family: 'Roboto', sans-serif;
+}
