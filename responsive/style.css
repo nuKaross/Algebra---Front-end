@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background-color: #f4f4f4;
+  border: 1px solid black;
+  display: flex;
+  height: 20%;
+  flex: 0 24%;
+  margin: 5px;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 0px) {
+  .flex-item {
+    flex: 0 99%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .flex-item {
+    flex: 0 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-item {
+    flex: 0 30%;
+  }
+}

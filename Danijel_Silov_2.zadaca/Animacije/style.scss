@@ -1,0 +1,79 @@
+@import './_flex.scss';
+@import './_colors.scss';
+@import './_size.scss';
+@import './_styles.scss';
+
+body {
+  @include spacing(0, 0);
+}
+
+.container {
+  @include flexanje;
+  @include size(100vw, 100vh);
+}
+
+@keyframes pulsiranjeOdgoda {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  60% {
+    transform: scale(1.5);
+  }
+  80% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+main div:nth-child(1) {
+  @include flexanje;
+  @include krug;
+  @include size(200px, 200px);
+  animation: pulsiranjeOdgoda linear 5s infinite;
+  background-color: $zuta;
+}
+
+@keyframes pulsiranjeBezOdgode {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+main div:nth-child(2) {
+  @include flexanje;
+  @include krug;
+  @include size(300px, 300px);
+  background-color: $zelena;
+  animation: pulsiranjeBezOdgode 1s infinite alternate;
+}
+
+@keyframes pulsiranje2s {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+main div:nth-child(3) {
+  @include flexanje;
+  @include krug;
+  @include size(100px, 100px);
+  animation: pulsiranje2s 2s infinite;
+  background-color: $crvena;
+}

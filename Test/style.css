@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  font-size: 2rem;
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  user-select: none;
+}
+
+.menu:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.menuContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  user-select: none;
+}
+
+.menubtn {
+  background-color: aliceblue;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.menubtn:hover {
+  background-color: #c98760e0;
+}

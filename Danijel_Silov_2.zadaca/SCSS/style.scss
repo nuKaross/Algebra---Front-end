@@ -1,0 +1,104 @@
+@import './_flex.scss';
+@import './_colors.scss';
+@import './_font.scss';
+
+body {
+  font-family: $defaultniFont;
+  margin: 0;
+  padding: 0;
+}
+
+//nav body
+header nav {
+  @include flex;
+  width: 100vw;
+  height: 10vh;
+  background-color: $primarnaBoja;
+}
+
+header nav ul {
+  @include flexCenter;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+header nav ul li a {
+  @include flexCenter;
+  background-color: $tercijarnaBoja;
+  color: $sekundarnaBoja;
+  height: 50px;
+  width: 300px;
+  text-decoration: none;
+}
+
+// header
+
+header div {
+  @include flexCenter;
+  justify-content: start;
+  width: 100vw;
+  height: 18vh;
+  background-color: $primarnaBoja;
+  color: $sekundarnaBoja;
+}
+
+header div a {
+  @include flexCenter;
+  background-color: $tercijarnaBoja;
+  color: $sekundarnaBoja;
+  height: 40px;
+  width: 300px;
+  text-decoration: none;
+}
+
+// main section
+
+main h1 {
+  @include flex;
+  text-align: center;
+  flex: 0 0 100%;
+}
+
+main {
+  @include flex;
+  justify-content: center;
+  color: $primarnaBoja;
+  height: 42vh;
+}
+
+main section {
+  @include flexCenter;
+  border: 2px solid $primarnaBoja;
+  width: 20vw;
+  height: 330px;
+  margin: 10px;
+}
+
+//Footer
+
+footer {
+  @include flex;
+  justify-content: space-around;
+  background-color: $primarnaBoja;
+  color: $sekundarnaBoja;
+  height: auto;
+  height: 30vh;
+}
+
+footer h1 {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+footer section {
+  @include flex;
+  justify-content: space-around;
+  width: 49%;
+}
